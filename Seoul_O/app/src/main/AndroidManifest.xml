@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.study.seoul_o">
+
+    <!-- internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--전화와 메시지를 보내기 위한 퍼미션-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDRYGhLC-CIMYDVs50zBPQ_T3DR6pVeW40"/>
+
+
+        <activity
+            android:name=".view.main.LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <!-- 서울로 정보 -->
+        <activity android:name=".view.info.InfoActivity"/>
+        <activity android:name=".view.info.MapActivity"/>
+
+        <!-- 맛집 정보 -->
+        <activity android:name=".view.food.FoodListActivity"/>
+        <activity android:name=".view.food.FoodDetailActivity"/>
+        <activity android:name=".view.food.FoodReviewActivity"/>
+        <activity
+            android:name=".view.food.FoodAddReviewActivity"
+            android:theme="@style/Base.Theme.AppCompat.Dialog"/>
+
+
+        <!-- 코스 정보 -->
+        <activity android:name=".view.course.CourceListActivity"/>
+        <activity android:name=".view.course.DetailActivity"/>
+        <activity android:name=".view.course.DetailActivity2"/>
+        <activity android:name=".view.course.DetailActivity3"/>
+        <activity android:name=".view.course.DetailActivity4"/>
+        <activity android:name=".view.course.MapDetailActivity"/>
+
+        <!-- 인스타 -->
+        <activity android:name=".view.instar.InstarActivity"/>
+
+
+    </application>
+
+</manifest>

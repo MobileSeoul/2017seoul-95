@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/app_color">
+
+        <TextView
+            android:text="Seoul_O"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollview"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            app:srcCompat="@drawable/pink_sky2" />
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:text="사람과 사람\n마음과 마음을 잇는 다리 " />
+
+                <TextView
+                    android:layout_below="@+id/title_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/title_01"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/title_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="숫자로 보는 Seoullo"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:background="#475186"
+            />
+
+    <!--숫자로 보는 서울로    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/bannerViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <LinearLayout
+            android:id="@+id/bannerDotsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/bannerViewPager"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#475186"/>
+
+    </RelativeLayout>
+
+     <!--서울로 히스토리   -->
+        <TextView
+            android:id="@+id/title_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seoullo History"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:background="#FFF2F1F1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1970"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:background="#FFF2F1F1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:background="#FFF2F1F1"
+            android:text="서울역 고가도로 준공 시작. 1975년 만리재에서 퇴계로까지 서울역 고가도로가 완성되며 산업 근대화 상징물로 자리매김"/>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/history1"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2000"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:background="#FFF2F1F1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:background="#FFF2F1F1"
+            android:text="세월이 흘러 노후화되면서 안전성 문제가 대두됨.2000년대 들어 안전진단결과 D등급을 받으면서 존폐 기로에 섬"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2009"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:background="#FFF2F1F1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:background="#FFF2F1F1"
+            android:text="고가도로 철거 및 주변도로 개선 계획이 세워짐. 서울북부역세권과 연계해 대체교량 설치하기로 결정됨."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/history_2009"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:background="#FFF2F1F1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:background="#FFF2F1F1"
+            android:text="찻길에서 사람길로 재탄생. 섬처럼 고립된 서울역 일대가 서울로의 17개 보행길로 연결되며 서울의 중심으로 부상함"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/history_2017"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="30dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="한눈에 보는 Seoullo "
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:background="#d7e9d1"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <ImageView
+
+            android:layout_below="@+id/text3"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/map"
+            />
+
+        <TextView
+            android:layout_below="@+id/map"
+            android:paddingBottom="10dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.5"
+            android:text="↑지도를 누르면 크게 확대됩니다"
+            android:background="#d7e9d1"
+            />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_margin="10dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="이용시간"
+                android:textSize="15dp"
+                android:background="#cee7ff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:padding="1dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="1년 365일 24시간"
+                android:textSize="15dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:background="#ffffff"
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="문의"
+                android:textSize="15dp"
+                android:background="#cee7ff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:padding="1dp"
+                />
+
+            <TextView
+                android:id="@+id/dasancall_textview"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="다산콜센터"
+                android:textSize="15dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:background="#ffffff"
+                />
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="오시는길"
+                android:textSize="15dp"
+                android:background="#cee7ff"
+                android:gravity="center"
+                android:padding="1dp"
+                />
+
+            <TextView
+                android:id="@+id/info_address_textview"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="http://seoullo7017.seoul.go.kr/SSF/H/OPE/050/04010.do"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:background="#ffffff"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>

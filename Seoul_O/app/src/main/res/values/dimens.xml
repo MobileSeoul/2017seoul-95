@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Standards dimentions. -->
+    <dimen name="standard_1.5">1.5dp</dimen>
+    <dimen name="standard_5">5dp</dimen>
+    <dimen name="standard_8">8dp</dimen>
+    <dimen name="standard_10">10dp</dimen>
+    <dimen name="standard_50">50dp</dimen>
+
+    <dimen name="toolbar_height">50dp</dimen>
+
+    <!-- main button -->
+    <dimen name="mainbutton_height">80dp</dimen>
+    <dimen name="mainbutton_icon_size">60dp</dimen>
+    <dimen name="mainbutton_margin">15dp</dimen>
+
+    <!-- list button -->
+    <dimen name="listbutton_height">200dp</dimen>
+    <dimen name="listbutton_text_height">40dp</dimen>
+
+    <!-- card image -->
+    <dimen name="recycler_view_left_offset">100dp</dimen>
+    <dimen name="left_offset">40dp</dimen>
+    <dimen name="card_width">300dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+
+
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Seoul_O</string>
+
+
+    <integer-array name="banner_img_array">
+        <item>@drawable/walk2</item>
+        <item>@drawable/facility2</item>
+        <item>@drawable/flower2</item>
+        <item>@drawable/open2</item>
+    </integer-array>
+
+
+    <string name="title_01">1960년대 서울의 중심을 관통하며 산업경제의 젖줄이 됐던 서울로가 2017년 5월 시민의 쉼터로 변신했습니다.\n\n
+        도로가 공원이 되면서 사람이 걸을 수 있는 길은 더욱 넓어졌습니다. 남산, 서대문 등 17개 보행길은 단절되어 있던 도시의 길을 회복합니다.\n\n
+        228종 2만485주의 다채로운 나무와 꽃은 지루한 보행길에 향기를 더합니다. 쉬고 거닐면서 서울의 매력을 발견해보아요.\n\n</string>
+
+
+</resources>

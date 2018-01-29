@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:background="@color/app_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listbutton_height"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_margin="8dp"
+                android:onClick="clickBtn">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_course_01_04"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="남산회현 코스"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:background="#b1303030"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listbutton_height"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_margin="8dp"
+                android:onClick="clickBtn2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_course_02_01"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="중림충정 코스"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:background="#b1303030"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listbutton_height"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_margin="8dp"
+                android:onClick="clickBtn3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_course_03_02"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="청파효창 코스"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:background="#b1303030"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listbutton_height"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_margin="8dp"
+                android:onClick="clickBtn4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_course_04_02"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="서울역통합 코스"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:background="#b1303030"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

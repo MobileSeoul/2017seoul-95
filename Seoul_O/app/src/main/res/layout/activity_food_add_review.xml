@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#00000000">
+
+
+    <LinearLayout
+        android:layout_below="@+id/review_logo"
+        android:layout_marginTop="-20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_review_bg"
+        android:orientation="vertical">
+
+        <!-- nickname & star -->
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/review_add_id"
+                android:hint="닉네임"
+                style="@style/ReviewEditText"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:id="@+id/review_add_star"
+                android:rating="5.0"
+                android:isIndicator="false"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/review_add_content"
+            android:hint="리뷰 내용을 적어주세요."
+            style="@style/ReviewEditText"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/review_add_button"
+            android:background="@drawable/shape_reviewbutton"
+            android:text="리뷰 등록"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/review_logo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/food_review"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+</RelativeLayout>

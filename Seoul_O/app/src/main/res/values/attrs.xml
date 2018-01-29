@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomMainBtn">
+        <attr name="buttonicon" format="reference|integer" />
+        <attr name="buttontext" format="reference|string" />
+        <attr name="buttoncolor" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomListBtn">
+        <attr name="customlistbackground" format="reference|integer" />
+        <attr name="customlisttext" format="reference|string" />
+    </declare-styleable>
+</resources>

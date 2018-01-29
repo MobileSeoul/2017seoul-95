@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.food.FoodDetailActivity"
+    tools:showIn="@layout/activity_food_detail"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#12345678">
+
+
+        <!-- 식당 이름과 종류 알려주는 부분-->
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/food_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="창수린"
+                    android:textColor="#505050"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_below="@+id/food_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c6c6c6"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/food_detail_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#606060"
+                    android:text="한식" />
+
+                <RatingBar
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/food_ratingbar"
+                    style="@style/Ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/food_avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <!-- 식당 상세 정보 제공-->
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="맛집 정보"
+                    android:textColor="@color/food_title_text"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/food_detail_line"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/map_maker"
+                        />
+
+                    <TextView
+                        android:id="@+id/food_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/food_text"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <!-- 식당 전화번호 정보 제공-->
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/call"/>
+
+                    <TextView
+                        android:id="@+id/food_call"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/food_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- 식당 영업시간 정보 제공-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/food_time"
+                        android:textColor="@color/food_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <!-- 식당 구글맵 표시-->
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="맛집 위치 보기"
+                    android:textColor="@color/food_title_text"
+                    android:textSize="20dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/food_detail_line"/>
+
+                <fragment
+                    android:id="@+id/food_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <!--식당관련 사진 스크롤로 보여주는 부분 -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="맛집 사진들"
+                    android:textColor="@color/food_title_text"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/food_detail_line"/>
+
+                <ImageView
+                    android:id="@+id/food_detail_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/food2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/food_detail_img1"
+                                android:layout_width="120dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="1dp"
+                                android:onClick="imgbtn"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/food2" />
+
+                            <ImageView
+                                android:id="@+id/food_detail_img2"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="1dp"
+                                android:onClick="imgbtn"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/food2" />
+
+                            <ImageView
+                                android:id="@+id/food_detail_img3"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="1dp"
+                                android:onClick="imgbtn"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/food2" />
+
+                            <ImageView
+                                android:id="@+id/food_detail_img4"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="1dp"
+                                android:onClick="imgbtn"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/food2" />
+
+                            <ImageView
+                                android:id="@+id/food_detail_img5"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="1dp"
+                                android:onClick="imgbtn"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/food2" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="맛집 리뷰"
+                        android:textColor="@color/food_title_text"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/review_button"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/food_detail_line"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/food_listview"
+                    app:layoutManager="LinearLayoutManager"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

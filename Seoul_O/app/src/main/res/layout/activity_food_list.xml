@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/app_color">
+
+        <TextView
+            android:text="맛 집"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TabHost
+        android:id="@+id/tabHost1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 첫 번째 페이지. content1 -->
+                <LinearLayout
+                    android:id="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button02_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food2"
+                                app:customlisttext="서울화반" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button03_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food3"
+                                app:customlisttext="두메산골" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button04_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food4"
+                                app:customlisttext="풀그라운드" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button05_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food5"
+                                app:customlisttext="더 플레이스" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button06_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food6"
+                                app:customlisttext="현상소" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button07_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food7"
+                                app:customlisttext="썬더볼드" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button08_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food8"
+                                app:customlisttext="호수집" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button09_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food9"
+                                app:customlisttext="베리키친" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button10_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food10"
+                                app:customlisttext="도동집" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+
+                </LinearLayout>
+
+                <!-- 두 번째 페이지. content2 -->
+                <LinearLayout
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button02_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food2"
+                                app:customlisttext="서울화반" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button03_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food3"
+                                app:customlisttext="두메산골" />
+
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button08_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food8"
+                                app:customlisttext="호수집" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button10_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food10"
+                                app:customlisttext="도동집" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <!-- 세 번째 페이지. content3 -->
+                <LinearLayout
+                    android:id="@+id/content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button04_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food4"
+                                app:customlisttext="풀그라운드" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button05_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food5"
+                                app:customlisttext="더 플레이스" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button07_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food7"
+                                app:customlisttext="썬더볼드" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button06_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food6"
+                                app:customlisttext="현상소" />
+
+                            <com.study.seoul_o.view.food.FoodListButton
+                                android:id="@+id/food_list_button09_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:customlistbackground="@drawable/food9"
+                                app:customlisttext="베리키친" />
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+</LinearLayout>

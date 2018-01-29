@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5500A148</color>
+    <color name="colorPrimaryDark">#9900A148</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="app_color">#8800A148</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- mainbutton color -->
+    <color name="list_button_color">#77000000</color>
+    <color name="mainbutton01_color">#aaf55047</color>
+    <color name="mainbutton02_color">#aaa947f5</color>
+    <color name="mainbutton03_color">#ccf5c447</color>
+    <color name="mainbutton04_color">#99099e63</color>
+
+    <color name="mainColor">#00a148</color>
+
+    <!-- switcher text color -->
+    <color name="text_id">#aa000000</color>
+    <color name="text_tag">#aa4444ff</color>
+    <color name="text_content">#88000000</color>
+
+    <!--food detail-->
+    <color name="food_deteil_background">#8d2fe48a</color>
+    <color name="food_detail_line">#c6c6c6</color>
+    <color name="food_title_text">#525253</color>
+    <color name="food_text">#797979</color>
+</resources>

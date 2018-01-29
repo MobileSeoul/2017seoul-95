@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_li"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mainbutton_height"
+    android:layout_marginTop="@dimen/mainbutton_margin"
+    android:weightSum="4"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainButton01"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mainbutton01_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@drawable/main_info"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="서울로 정보"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainButton02"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mainbutton02_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@drawable/main_course"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="서울로 코스"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainButton03"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mainbutton03_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@drawable/main_food"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="서울로 맛집"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainButton04"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mainbutton04_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@drawable/main_image"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="인생샷"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
